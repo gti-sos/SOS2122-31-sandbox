@@ -1,0 +1,20 @@
+{
+  "name": "f03",
+  "version": "1.0.0",
+  "description": "Module F03",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test-alphabetization-stats": "npx newman run ./test/alphabetization-stats.json -e ./test/env//api/v1/alphabetization-statsENV.json",
+    "test": "npm run test-alphabetization-stats"
+  },
+  "author": "sos2122-31",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.2",
+    "cool-ascii-faces": "^1.3.4",
+    "express": "^4.17.3",
+    "nedb": "^1.8.0",
+    "path": "^0.12.7"
+  }
+}
